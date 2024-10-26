@@ -1,6 +1,6 @@
 package com.praticando.java;
 
-import com.praticando.java.Day03.Day03;
+import com.praticando.java.Day04.Day04;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -15,7 +15,7 @@ public class PraticandoJavaApplication implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws Exception {
-        Day03 day03 = new Day03();
-        day03.verificarDoisNumerosMaioresQue10();
+        Day04 day04 = new Day04();
+        day04.imprimirDoisNumeroMostrandoSeusInteiros();
     }
 }
