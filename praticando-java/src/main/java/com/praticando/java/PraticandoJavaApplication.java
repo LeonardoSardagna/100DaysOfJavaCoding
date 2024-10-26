@@ -16,6 +16,6 @@ public class PraticandoJavaApplication implements CommandLineRunner {
     @Override
     public void run(String... args) throws Exception {
         Day04 day04 = new Day04();
-        day04.imprimirDoisNumeroMostrandoSeusInteiros();
+        day04.somaDe5Valores();
     }
 }
