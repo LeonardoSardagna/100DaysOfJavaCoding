@@ -4,7 +4,7 @@ public class Livros {
     private String titulo;
     private String autor;
     private int ano;
-    private Enum<StatusLivro> staus;
+    private Enum<StatusLivro> statusLivroEnum;
 
     public Livros(String titulo, String autor, int ano, Enum<StatusLivro> staus) {
         if (!titulo.isBlank()) {
@@ -22,7 +22,7 @@ public class Livros {
         } else {
             throw new IllegalArgumentException("O ano não pode conter um valor negativo");
         }
-        this.staus = staus;
+        this.statusLivroEnum = staus;
     }
 
     public String getTitulo() {
@@ -49,12 +49,12 @@ public class Livros {
         this.ano = ano;
     }
 
-    public Enum<StatusLivro> getStaus() {
-        return staus;
+    public Enum<StatusLivro> getStatusLivroEnum() {
+        return statusLivroEnum;
     }
 
-    public void setStaus(Enum<StatusLivro> staus) {
-        this.staus = staus;
+    public void setStatusLivroEnum(Enum<StatusLivro> statusLivroEnum) {
+        this.statusLivroEnum = statusLivroEnum;
     }
 
     @Override
@@ -62,6 +62,6 @@ public class Livros {
         return "titulo: " + titulo +
                 ", autor: " + autor +
                 ", ano: " + ano +
-                ", staus: " + staus;
+                ", staus: " + statusLivroEnum;
     }
 }

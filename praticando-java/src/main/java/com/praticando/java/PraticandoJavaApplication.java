@@ -1,5 +1,6 @@
 package com.praticando.java;
 
+import com.praticando.java.Day06.Day06;
 import com.praticando.java.Day5.Day5;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
@@ -15,7 +16,7 @@ public class PraticandoJavaApplication implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws Exception {
-        Day5 day5 = new Day5();
-        day5.livraria();
+        Day06 day06 = new Day06();
+        day06.adicionaNumerosNaLista();
     }
 }

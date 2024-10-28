@@ -49,4 +49,27 @@ Os principais tópicos revisados foram:
 
 ---
 
+## Projeto Final: Sistema de Gerenciamento de Biblioteca
+
+**Descrição:**  
+Desenvolva um sistema de gerenciamento de biblioteca, com as seguintes funcionalidades:
+
+1. **Cadastro de Livros**: Permita ao usuário cadastrar livros informando o título, o autor, o ano de publicação e o status (`disponível` ou `emprestado`). O sistema deve validar que o título e o autor sejam preenchidos e que o ano de publicação seja um valor positivo.
+
+2. **Empréstimo de Livros**: Permita ao usuário buscar um livro pelo título e, caso esteja disponível, marcar como `emprestado`. Se o livro já estiver emprestado, exiba uma mensagem informando que o livro não está disponível.
+
+3. **Devolução de Livros**: Permita ao usuário buscar um livro pelo título e marcar como `disponível` caso ele esteja emprestado.
+
+4. **Exibição de Livros Disponíveis**: Exiba uma lista de todos os livros com o status `disponível`.
+
+5. **Exibição de Todos os Livros**: Exiba todos os livros cadastrados com todas as informações.
+
+**Requisitos:**
+- Utilize uma lista para armazenar objetos `Livro`.
+- Implemente um menu para permitir que o usuário escolha entre as operações.
+- Adicione validações para garantir que títulos e autores não estejam em branco, e valide o ano de publicação.
+- Permita que o sistema funcione até que o usuário escolha a opção de sair.
+
+---
+
 Obs: pedi para o ChatGTP criar os exercícios e corrigir depois de finalizado.
