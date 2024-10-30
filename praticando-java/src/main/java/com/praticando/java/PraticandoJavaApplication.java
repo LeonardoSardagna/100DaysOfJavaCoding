@@ -1,6 +1,6 @@
 package com.praticando.java;
 
-import com.praticando.java.Day07.Day07;
+import com.praticando.java.Day08.ExercicioMatriz;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -15,7 +15,7 @@ public class PraticandoJavaApplication implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws Exception {
-        Day07 day07 = new Day07();
-        day07.eliminarDuplicatasComOrdem();
+        ExercicioMatriz exercicioMatriz = new ExercicioMatriz();
+        exercicioMatriz.compromisso();
     }
 }
