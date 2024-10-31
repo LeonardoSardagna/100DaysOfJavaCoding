@@ -166,6 +166,7 @@ public class ExercicioMatriz {
                     }
 
                     dia--;
+                    scanner.nextLine();
                     System.out.print("Digite o seu compromisso: ");
                     matriz[dia][hora] = scanner.nextLine();
                     break;
@@ -181,7 +182,7 @@ public class ExercicioMatriz {
                         String compromisso = matriz[diaEscolhido][horaEscolhida];
 
                         if (compromisso != null) {
-                            System.out.println(compromisso);
+                            System.out.println("Compromisso: " + compromisso);
 
                         } else {
                             System.out.println("Nenhum compromisso encontrado");
