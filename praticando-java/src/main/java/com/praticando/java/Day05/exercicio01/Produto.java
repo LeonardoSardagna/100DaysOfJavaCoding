@@ -1,4 +1,4 @@
-package com.praticando.java.Day5.exercicio01;
+package com.praticando.java.Day05.exercicio01;
 
 //exercício 01
 public class Produto {

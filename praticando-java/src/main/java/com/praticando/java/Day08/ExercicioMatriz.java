@@ -141,6 +141,7 @@ public class ExercicioMatriz {
                 case 1:
                     boolean diaValido = false;
                     int dia = 0;
+
                     while (!diaValido) {
                         System.out.print("Coloque o dia do mês: ");
                         dia = scanner.nextInt();
@@ -152,14 +153,14 @@ public class ExercicioMatriz {
                         }
                     }
 
-                    boolean horaValido = false;
+                    boolean horaValida = false;
                     int hora = 0;
-                    while (!horaValido) {
+
+                    while (!horaValida) {
                         System.out.print("Coloque a hora: ");
                         hora = scanner.nextInt();
-
-                        if (hora > 0 && hora < 24) {
-                            horaValido = true;
+                        if (hora >= 0 && hora <= 23) {
+                            horaValida = true;
                         } else {
                             System.out.println("Hora inválido!");
                         }
@@ -177,19 +178,7 @@ public class ExercicioMatriz {
                     System.out.print("Hora do dia(0 a 23): ");
                     int horaEscolhida = scanner.nextInt();
 
-                    if (diaEscolhido >= 1 && diaEscolhido <= 31 && horaEscolhida >= 0 && horaEscolhida <= 23) {
-                        diaEscolhido--;
-                        String compromisso = matriz[diaEscolhido][horaEscolhida];
-
-                        if (compromisso != null) {
-                            System.out.println("Compromisso: " + compromisso);
-
-                        } else {
-                            System.out.println("Nenhum compromisso encontrado");
-                        }
-                    } else {
-                        System.out.println("Dia ou hora inválida");
-                    }
+                    validarDiaeHora(diaEscolhido, horaEscolhida, matriz);
 
                     break;
                 case 3:
@@ -200,6 +189,22 @@ public class ExercicioMatriz {
                     System.out.println("Opção inválida");
                     break;
             }
+        }
+    }
+
+    static void validarDiaeHora(int diaEscolhido, int horaEscolhida, String[][] matriz) {
+        if (diaEscolhido >= 1 && diaEscolhido <= 31 && horaEscolhida >= 0 && horaEscolhida <= 23) {
+            diaEscolhido--;
+            String compromisso = matriz[diaEscolhido][horaEscolhida];
+
+            if (compromisso != null) {
+                System.out.println("Compromisso: " + compromisso);
+
+            } else {
+                System.out.println("Nenhum compromisso encontrado");
+            }
+        } else {
+            System.out.println("Dia ou hora inválida");
         }
     }
 

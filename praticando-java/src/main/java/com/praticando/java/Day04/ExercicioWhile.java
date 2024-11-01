@@ -1,76 +1,9 @@
 package com.praticando.java.Day04;
 
-import java.util.Random;
 import java.util.Scanner;
 
-public class Day04 {
-    //faça um programa que leia um número e imprima qual
-    //dia da semana de acordo com o número lido usado
+public class ExercicioWhile {
     Scanner scanner = new Scanner(System.in);
-
-    //utilizando o switch
-    public void marcarConsultaPorDia() {
-        System.out.println("""
-                 Escolha um dia da semana para marcar sua consulta: 
-                 1- Domingo
-                 2- Segunda-feira
-                 3- Terça-feira
-                 4- Quarta-feira
-                 5- Quinta-feira
-                 6- Sexta-feira
-                 7- Sábado
-                """);
-        System.out.print("Opção: ");
-        int dia = scanner.nextInt();
-
-        switch (dia) {
-            case 1:
-                System.out.println("Consulta marcada para domingo");
-                break;
-            case 2:
-                System.out.println("Consulta marcada para segunda-feira");
-                break;
-            case 3:
-                System.out.println("Consulta marcada para terça-feira");
-                break;
-            case 4:
-                System.out.println("Consulta marcada para quarta-feira");
-                break;
-            case 5:
-                System.out.println("Consulta marcada para quinta-feira");
-                break;
-            case 6:
-                System.out.println("Consulta marcada para sexta feira");
-                break;
-            case 7:
-                System.out.println("Consulta marcada no Sábado");
-                break;
-            default:
-                System.out.println("Opção inválida");
-        }
-    }
-
-    //utilizando a biblioteca Random para gerar números aleatórios
-    public void verificarMultiplicacaoAleatoria() {
-        //faça um programa que gera dois números de 1 e 6
-        //e imprima se a multiplicação entre eles é maior
-        //ou menor que 15
-        Random random = new Random();
-
-        int min = 1;
-        int max = 6;
-        int numeroAleatorio1 = min + random.nextInt(max - min + 1);
-        int numeroAleatorio2 = min + random.nextInt(max - min + 1);
-
-        int multiplicacao = numeroAleatorio1 * numeroAleatorio2;
-        if (multiplicacao > 15) {
-            System.out.println("A multiplicação entre " + numeroAleatorio1 + " e " + numeroAleatorio2 + " é " + multiplicacao);
-            System.out.println("Maior que 15");
-        } else {
-            System.out.println("A multiplicação entre " + numeroAleatorio1 + " e " + numeroAleatorio2 + " é " + multiplicacao);
-            System.out.println("Menor que 15");
-        }
-    }
 
     //utilizando o laço de repetição while
     public void imprimirNumerosAte10() {
@@ -187,26 +120,5 @@ public class Day04 {
                 i++;
             }
         }
-    }
-
-    //utilizando o loop for
-    public void numerosDe10a20() {
-        //faça um programa que imprima números de 10 a 20, de dois em dois
-
-        for (int i = 10; i <= 20; i += 2) {
-            System.out.println("Número: " + i);
-        }
-    }
-
-    public void somaDe5Valores() {
-        //faça um programa que leia 5 valores(usando o for)
-        //e mostre a soma deles
-        int soma = 0;
-        //faça algo 5 vezes
-        for (int i = 0; i < 5; i++) {
-            System.out.print("Insira o " + (i+1) + "° valor: ");
-            soma += scanner.nextInt();
-        }
-        System.out.println("A soma total dos números inseridos foi de "+ soma);
     }
 }

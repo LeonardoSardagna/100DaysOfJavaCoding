@@ -1,16 +1,16 @@
-package com.praticando.java.Day5;
+package com.praticando.java.Day05;
 
-import com.praticando.java.Day5.exercicio01.Produto;
-import com.praticando.java.Day5.exercicio02.Usuario;
-import com.praticando.java.Day5.exercicioFinal.Livros;
-import com.praticando.java.Day5.exercicioFinal.StatusLivro;
+import com.praticando.java.Day05.exercicio01.Produto;
+import com.praticando.java.Day05.exercicio02.Usuario;
+import com.praticando.java.Day05.exercicioFinal.Livros;
+import com.praticando.java.Day05.exercicioFinal.StatusLivro;
 
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
 import java.util.Scanner;
 
-public class Day5 {
+public class Revisao {
     //Exercícios de revisão
 
     Scanner scanner = new Scanner(System.in);

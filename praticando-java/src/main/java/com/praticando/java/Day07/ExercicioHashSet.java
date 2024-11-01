@@ -2,7 +2,7 @@ package com.praticando.java.Day07;
 
 import java.util.*;
 
-public class Day07 {
+public class ExercicioHashSet {
     //Uso de Map
     Scanner scanner = new Scanner(System.in);
 
@@ -123,68 +123,5 @@ public class Day07 {
                 System.out.println("Usuário não encontrado");
             }
         }
-    }
-
-    //exercício treeset
-    public void numerosOrdenados() {
-        //Crie um programa que leia uma lista de números inteiros,
-        //armazene-os em um TreeSet e exiba os números em ordem crescente.
-        Set<Integer> integerSet = new TreeSet<>();
-        integerSet.add(1);
-        integerSet.add(4);
-        integerSet.add(2);
-        integerSet.add(3);
-        integerSet.add(0);
-        integerSet.add(5);
-        //Vai ordenar a lista automáticamente
-        integerSet.forEach(System.out::println);
-    }
-
-    public void compararNomes() {
-        //Crie um programa que armazene nomes em um TreeSet
-        //e exiba os nomes em ordem alfabética.
-        Set<String> nomesSet = new TreeSet<>();
-        nomesSet.add("Leonardo");
-        nomesSet.add("Vanderlei");
-        nomesSet.add("Anatel");
-        nomesSet.add("Valmir");
-        nomesSet.add("Mari");
-
-        nomesSet.forEach(System.out::println);
-    }
-
-    //exercício linkedHashSet
-    public void manterOrdemDeInsercao() {
-        //Crie um programa que armazene palavras em
-        // um LinkedHashSet e exiba as palavras na ordem em que foram inseridas.
-        Set<String> palavrasSet = new LinkedHashSet<>();
-        palavrasSet.add("Avião");
-        palavrasSet.add("Leão");
-        palavrasSet.add("Barraca");
-        palavrasSet.add("Satélite");
-
-        palavrasSet.forEach(System.out::println);
-    }
-
-    public void eliminarDuplicatasComOrdem() {
-        //Crie um programa que leia uma lista de números inteiros e
-        //armazene-os em um LinkedHashSet para remover duplicatas,
-        //mantendo a ordem de inserção, e depois exiba os números.
-        Set<Integer> integerSet = new LinkedHashSet<>();
-        ArrayList<Integer> integerArrayList = new ArrayList<>();
-
-        integerArrayList.add(1);
-        integerArrayList.add(1);
-        integerArrayList.add(3);
-        integerArrayList.add(3);
-        integerArrayList.add(4);
-        integerArrayList.add(5);
-        integerArrayList.add(2);
-        integerArrayList.add(4);
-        integerArrayList.add(1);
-
-        integerSet.addAll(integerArrayList);
-
-        integerSet.forEach(System.out::println);
     }
 }

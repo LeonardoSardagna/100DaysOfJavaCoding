@@ -1,4 +1,4 @@
-package com.praticando.java.Day5.exercicioFinal;
+package com.praticando.java.Day05.exercicioFinal;
 
 public class Livros {
     private String titulo;

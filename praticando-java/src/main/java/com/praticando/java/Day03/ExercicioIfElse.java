@@ -1,8 +1,9 @@
 package com.praticando.java.Day03;
 
+import java.util.Random;
 import java.util.Scanner;
 
-public class Day03 {
+public class ExercicioIfElse {
     Scanner scanner = new Scanner(System.in);
 
     public void verificarIdadeMaiorIdade() {
@@ -161,6 +162,28 @@ public class Day03 {
             } else {
                 System.out.println("O número " + numero02 + " é menor que 10");
             }
+        }
+    }
+
+    //utilizando a biblioteca Random para gerar números aleatórios
+    public void verificarMultiplicacaoAleatoria() {
+        //faça um programa que gera dois números de 1 e 6
+        //e imprima se a multiplicação entre eles é maior
+        //ou menor que 15
+        Random random = new Random();
+
+        int min = 1;
+        int max = 6;
+        int numeroAleatorio1 = min + random.nextInt(max - min + 1);
+        int numeroAleatorio2 = min + random.nextInt(max - min + 1);
+
+        int multiplicacao = numeroAleatorio1 * numeroAleatorio2;
+        if (multiplicacao > 15) {
+            System.out.println("A multiplicação entre " + numeroAleatorio1 + " e " + numeroAleatorio2 + " é " + multiplicacao);
+            System.out.println("Maior que 15");
+        } else {
+            System.out.println("A multiplicação entre " + numeroAleatorio1 + " e " + numeroAleatorio2 + " é " + multiplicacao);
+            System.out.println("Menor que 15");
         }
     }
 }

@@ -1,4 +1,4 @@
-package com.praticando.java.Day5.exercicio02;
+package com.praticando.java.Day05.exercicio02;
 
 //exercício 02
 public class Usuario {
